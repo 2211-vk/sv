@@ -7,7 +7,7 @@ import numpy as np
 st.title('Image Segmentation with kMeans')
 c1, c2 = st.columns(2)
 with c1:
-    img_url = st.text_input('Image URL (Press Enter to apply)')
+    img_url = st.text_input('Image URL (Press Enter to apply)', value = None)
     if img_url != None:
         st.image(img_url, caption = 'Original Image')
 
